@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+header nav {
+  background: #4c2a92;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav a { color: white; text-decoration: none; font-weight: bold; }
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+.btn {
+  background: white;
+  color: #2575fc;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+}
+.card img { width: 100%; border-radius: 5px; }
+.popup {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex; justify-content: center; align-items: center;
+}
+.popup.hidden { display: none; }
+.popup-content {
+  background: white; padding: 20px; border-radius: 8px; width: 300px;
+}
+.close { cursor: pointer; float: right; font-size: 20px; }
+form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: auto; }
+input, textarea { padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+button { background: #4c2a92; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }

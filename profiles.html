@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profiles - WedHire</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="profiles">
+    <h1>Featured Profiles</h1>
+    <div class="card" onclick="showProfile('Bride 1')">
+      <img src="assets/bride1.jpg" alt="Bride">
+      <h3>Bride 1</h3>
+      <p>Age: 26 | Software Engineer</p>
+    </div>
+    <div class="card" onclick="showProfile('Groom 1')">
+      <img src="assets/groom1.jpg" alt="Groom">
+      <h3>Groom 1</h3>
+      <p>Age: 29 | Doctor</p>
+    </div>
+  </section>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2 id="popup-name"></h2>
+      <p>Full details will appear here…</p>
+    </div>
+  </div>
+</body>
+</html>
